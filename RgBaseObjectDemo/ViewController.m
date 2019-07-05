@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZRMacro.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIFont *d = [UIFont systemFontOfSize:22 weight:22];
 }
 
 

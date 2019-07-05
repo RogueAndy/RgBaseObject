@@ -25,6 +25,7 @@
 		82526A5B22C4C39D0060C462 /* ZRRemoteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4E22C4C39D0060C462 /* ZRRemoteNotification.m */; };
 		82526A5C22C4C39D0060C462 /* ZRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4F22C4C39D0060C462 /* ZRProperty.m */; };
 		82526A5D22C4C39D0060C462 /* ZRInitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A5022C4C39D0060C462 /* ZRInitView.m */; };
+		828AE6BC22CEE52900C0FE66 /* UIResponder+ZRResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AE6BB22CEE52900C0FE66 /* UIResponder+ZRResponder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		82526A4F22C4C39D0060C462 /* ZRProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRProperty.m; sourceTree = "<group>"; };
 		82526A5022C4C39D0060C462 /* ZRInitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRInitView.m; sourceTree = "<group>"; };
 		82526A5122C4C39D0060C462 /* ZRTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRTimer.h; sourceTree = "<group>"; };
+		828AE6BA22CEE52900C0FE66 /* UIResponder+ZRResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+ZRResponder.h"; sourceTree = "<group>"; };
+		828AE6BB22CEE52900C0FE66 /* UIResponder+ZRResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+ZRResponder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				82526A3A22C4C39D0060C462 /* UITextView+ZRCategory.m */,
 				82526A3822C4C39D0060C462 /* UIView+ZRView.h */,
 				82526A4022C4C39D0060C462 /* UIView+ZRView.m */,
+				828AE6BA22CEE52900C0FE66 /* UIResponder+ZRResponder.h */,
+				828AE6BB22CEE52900C0FE66 /* UIResponder+ZRResponder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				82526A5B22C4C39D0060C462 /* ZRRemoteNotification.m in Sources */,
 				82526A2222C4C3570060C462 /* AppDelegate.m in Sources */,
 				82526A5922C4C39D0060C462 /* ZRColor.m in Sources */,
+				828AE6BC22CEE52900C0FE66 /* UIResponder+ZRResponder.m in Sources */,
 				82526A5522C4C39D0060C462 /* UIAlertController+ZRAlert.m in Sources */,
 				82526A5422C4C39D0060C462 /* UIView+ZRView.m in Sources */,
 			);
