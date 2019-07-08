@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RgBaseObject"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "基础组件"
   s.description  = <<-DESC
                     基础组件，初始化等等
@@ -31,6 +31,5 @@ Pod::Spec.new do |s|
     ss.source_files = "RgBaseObject/Tool/*"
     ss.public_header_files = "RgBaseObject/Tool/*.h"
     ss.ios.frameworks = 'UIKit', 'Foundation'
-    ss.dependency 'RgBaseObject/Category'
   end
 end

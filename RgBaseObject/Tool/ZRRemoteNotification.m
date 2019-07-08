@@ -7,7 +7,7 @@
 //
 
 #import "ZRRemoteNotification.h"
-#import "UIAlertController+ZRAlert.h"
+#import "ZRMacro.h"
 
 // 在系统UserDefaults 里面注册一个app推送是否开启的开关判断 ZRRemoteNotification_Open_App = 1 时候为开启，其余状态都是关闭app推送
 #define ZRRemoteNotification_Open_App @"ZRRemoteNotification_Open_App"
@@ -57,9 +57,20 @@
         return true;
     }
     
-    UIAlertController *alert = [UIAlertController alertWithTitle:@"是否需要到设置页开启推送" message:@"" sureTitle:@"是的" cancelTitle:@"取消" sureHandler:^(UIAlertAction * _Nonnull action) {
-        [ZRRemoteNotification intoSystemSetting];
-    } cancelHandler:nil];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"是否需要到设置页开启推送" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *s = [UIAlertAction actionWithTitle:@"是的"
+                                                style:UIAlertActionStyleDefault
+                                              handler:^(UIAlertAction * _Nonnull action) {
+                                                  [ZRRemoteNotification intoSystemSetting];
+                                              }];
+    [alert addAction:s];
+    
+    UIAlertAction *c = [UIAlertAction actionWithTitle:@"取消"
+                                                style:UIAlertActionStyleCancel
+                                              handler:nil];
+    
+    [alert addAction:c];
     [viewController presentViewController:alert animated:true completion:nil];
     return false;
 }
