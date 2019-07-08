@@ -12,6 +12,7 @@
 #import "ZRTimer.h"
 #import "ZRProperty.h"
 #import "ZRRemoteNotification.h"
+#import "ZRActionSheet.h"
 
 #import "NSDictionary+ZRDictionary.h"
 #import "UIAlertController+ZRAlert.h"
@@ -20,3 +21,4 @@
 #import "UIResponder+ZRResponder.h"
 #import "UITextView+ZRCategory.h"
 #import "UITableViewCell+ZRCategoryCell.h"
+

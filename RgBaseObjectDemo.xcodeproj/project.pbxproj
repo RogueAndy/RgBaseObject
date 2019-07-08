@@ -25,6 +25,7 @@
 		82526A5B22C4C39D0060C462 /* ZRRemoteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4E22C4C39D0060C462 /* ZRRemoteNotification.m */; };
 		82526A5C22C4C39D0060C462 /* ZRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4F22C4C39D0060C462 /* ZRProperty.m */; };
 		82526A5D22C4C39D0060C462 /* ZRInitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A5022C4C39D0060C462 /* ZRInitView.m */; };
+		827AA82522D30299008E1A67 /* ZRActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 827AA82422D30299008E1A67 /* ZRActionSheet.m */; };
 		828AE6BC22CEE52900C0FE66 /* UIResponder+ZRResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 828AE6BB22CEE52900C0FE66 /* UIResponder+ZRResponder.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		82526A4F22C4C39D0060C462 /* ZRProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRProperty.m; sourceTree = "<group>"; };
 		82526A5022C4C39D0060C462 /* ZRInitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRInitView.m; sourceTree = "<group>"; };
 		82526A5122C4C39D0060C462 /* ZRTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRTimer.h; sourceTree = "<group>"; };
+		827AA82322D30299008E1A67 /* ZRActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRActionSheet.h; sourceTree = "<group>"; };
+		827AA82422D30299008E1A67 /* ZRActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRActionSheet.m; sourceTree = "<group>"; };
 		828AE6BA22CEE52900C0FE66 /* UIResponder+ZRResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+ZRResponder.h"; sourceTree = "<group>"; };
 		828AE6BB22CEE52900C0FE66 /* UIResponder+ZRResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+ZRResponder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +118,8 @@
 		82526A3622C4C39D0060C462 /* RgBaseObject */ = {
 			isa = PBXGroup;
 			children = (
-				82526A3722C4C39D0060C462 /* Category */,
 				82526A4422C4C39D0060C462 /* ZRBaseObject.h */,
+				82526A3722C4C39D0060C462 /* Category */,
 				82526A4522C4C39D0060C462 /* Tool */,
 			);
 			path = RgBaseObject;
@@ -158,6 +161,8 @@
 				82526A4E22C4C39D0060C462 /* ZRRemoteNotification.m */,
 				82526A5122C4C39D0060C462 /* ZRTimer.h */,
 				82526A4A22C4C39D0060C462 /* ZRTimer.m */,
+				827AA82322D30299008E1A67 /* ZRActionSheet.h */,
+				827AA82422D30299008E1A67 /* ZRActionSheet.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				82526A5822C4C39D0060C462 /* ZRTimer.m in Sources */,
 				82526A5D22C4C39D0060C462 /* ZRInitView.m in Sources */,
 				82526A5C22C4C39D0060C462 /* ZRProperty.m in Sources */,
+				827AA82522D30299008E1A67 /* ZRActionSheet.m in Sources */,
 				82526A5A22C4C39D0060C462 /* ZRMacro.m in Sources */,
 				82526A5722C4C39D0060C462 /* UITableViewCell+ZRCategoryCell.m in Sources */,
 				82526A5B22C4C39D0060C462 /* ZRRemoteNotification.m in Sources */,
