@@ -39,7 +39,7 @@ static NSString *key_ZRBaseObject_isShowBottomLine = @"key_ZRBaseObject_isShowBo
     self.leftSpace = leftSpace;
     self.rightSpace = rightSpace;
     self.isShowBottomLine = is;
-    self.lineColor = [UIColor colorWithRed:232/255.0 green:232/255.0 blue:232/255.0 alpha:1];
+    self.lineColor = [UIColor colorWithRed:242/255.0 green:245/255.0 blue:247/255.0 alpha:1];
     
     [self setNeedsDisplay];
 }
