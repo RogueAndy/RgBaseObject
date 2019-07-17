@@ -51,6 +51,49 @@
 + (UIAlertController *)alertWithTitle:(NSString *)title
                               message:(NSString *)msg
                             sureTitle:(NSString *)sure
+                          cancelTitle:(NSString *)cancel
+                          cancelColor:(UIColor *)color
+                          sureHandler:(__nullable ZRActionHandler)sureHandler
+                        cancelHandler:(__nullable ZRActionHandler)cacelHandler {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:msg
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    if (!ZR_StringIsEmpty(sure)) {
+        UIAlertAction *s = [UIAlertAction actionWithTitle:sure
+                                                    style:UIAlertActionStyleDefault
+                                                  handler:^(UIAlertAction * _Nonnull action) {
+                                                      if (sureHandler) {
+                                                          sureHandler(action);
+                                                      }
+                                                  }];
+        [alert addAction:s];
+    }
+    
+    if (!ZR_StringIsEmpty(cancel)) {
+        
+        UIAlertAction *c = [UIAlertAction actionWithTitle:cancel
+                                                    style:UIAlertActionStyleCancel
+                                                  handler:^(UIAlertAction * _Nonnull action) {
+                                                      if (cacelHandler) {
+                                                          cacelHandler(action);
+                                                      }
+                                                  }];
+        
+        if(!color) {
+            color = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
+        }
+        [c setValue:color forKey:@"_titleTextColor"];
+        [alert addAction:c];
+    }
+    
+    return alert;
+    
+}
+
++ (UIAlertController *)alertWithTitle:(NSString *)title
+                              message:(NSString *)msg
+                            sureTitle:(NSString *)sure
                           sureHandler:(__nullable ZRActionHandler)sureHandler{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
                                                                    message:msg

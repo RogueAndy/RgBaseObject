@@ -39,6 +39,25 @@ typedef void(^ZRActionSheetHandler)(UIAlertAction *action,NSInteger selectIndex)
  @param title 标题
  @param msg 详情
  @param sure 确定标题
+ @param cancel 取消标题
+ @param sureHandler 确定回调
+ @param cacelHandler 取消回调
+ @return UIAlertController(类型为UIAlertControllerStyleAlert)
+ */
++ (UIAlertController *)alertWithTitle:(NSString *)title
+                              message:(NSString *)msg
+                            sureTitle:(NSString *)sure
+                          cancelTitle:(NSString *)cancel
+                          cancelColor:(UIColor *)color
+                          sureHandler:(__nullable ZRActionHandler)sureHandler
+                        cancelHandler:(__nullable ZRActionHandler)cacelHandler;
+
+/**
+ UIAlertControllerStyleAlert
+ 
+ @param title 标题
+ @param msg 详情
+ @param sure 确定标题
  @param sureHandler 确定回调
  @return UIAlertController(类型为UIAlertControllerStyleAlert)
  */
