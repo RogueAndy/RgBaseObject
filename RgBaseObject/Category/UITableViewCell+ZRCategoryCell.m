@@ -39,7 +39,7 @@ static NSString *key_ZRBaseObject_isShowBottomLine = @"key_ZRBaseObject_isShowBo
     self.leftSpace = leftSpace;
     self.rightSpace = rightSpace;
     self.isShowBottomLine = is;
-    self.lineColor = [UIColor colorWithRed:242/255.0 green:245/255.0 blue:247/255.0 alpha:1];
+    self.lineColor = [UIColor colorWithRed:245/255.0 green:247/255.0 blue:249/255.0 alpha:1];
     
     [self setNeedsDisplay];
 }
@@ -140,9 +140,9 @@ static NSString *key_ZRBaseObject_isShowBottomLine = @"key_ZRBaseObject_isShowBo
         self.bottomLine.hidden = NO;
         
         UIBezierPath *pathOne = [UIBezierPath bezierPath];
-        pathOne.lineWidth = 0.5;
-        [pathOne moveToPoint:CGPointMake(self.leftSpace, CGRectGetHeight(self.frame) - 0.5)];
-        [pathOne addLineToPoint:CGPointMake(CGRectGetWidth(self.frame) - self.rightSpace, CGRectGetHeight(self.frame) - 0.5)];
+        pathOne.lineWidth = 0.1;
+        [pathOne moveToPoint:CGPointMake(self.leftSpace, CGRectGetHeight(self.frame) - 0.1)];
+        [pathOne addLineToPoint:CGPointMake(CGRectGetWidth(self.frame) - self.rightSpace, CGRectGetHeight(self.frame) - 0.1)];
         [pathOne stroke];
         
         if(!self.bottomLine) {
