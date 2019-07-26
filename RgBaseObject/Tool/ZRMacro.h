@@ -47,7 +47,7 @@ value = str ? str : @"";\
 #define ZR_matching_scale (ZR_ScreenWidth / 375.0)
 
 // 宽度比例适配
-#define ZR_matching_width(width) ((width) * ZR_matching_scale)
+#define ZR_matching_width(width) round((width) * ZR_matching_scale)
 
 // 字体大小适配
 #define ZR_font(size) [UIFont systemFontOfSize:size]
