@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8211743722F02566008D9174 /* UIButton+ZREnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8211743622F02566008D9174 /* UIButton+ZREnlargeEdge.m */; };
 		82526A2222C4C3570060C462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A2122C4C3570060C462 /* AppDelegate.m */; };
 		82526A2522C4C3570060C462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A2422C4C3570060C462 /* ViewController.m */; };
 		82526A2822C4C3570060C462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82526A2622C4C3570060C462 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8211743522F02566008D9174 /* UIButton+ZREnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZREnlargeEdge.h"; sourceTree = "<group>"; };
+		8211743622F02566008D9174 /* UIButton+ZREnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZREnlargeEdge.m"; sourceTree = "<group>"; };
 		82526A1D22C4C3570060C462 /* RgBaseObjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RgBaseObjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82526A2022C4C3570060C462 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82526A2122C4C3570060C462 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		82526A3722C4C39D0060C462 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8211743522F02566008D9174 /* UIButton+ZREnlargeEdge.h */,
+				8211743622F02566008D9174 /* UIButton+ZREnlargeEdge.m */,
 				82526A3F22C4C39D0060C462 /* NSDictionary+ZRDictionary.h */,
 				82526A3922C4C39D0060C462 /* NSDictionary+ZRDictionary.m */,
 				82526A3D22C4C39D0060C462 /* NSString+ZRString.h */,
@@ -248,6 +253,7 @@
 				827AA82522D30299008E1A67 /* ZRActionSheet.m in Sources */,
 				82526A5A22C4C39D0060C462 /* ZRMacro.m in Sources */,
 				82526A5722C4C39D0060C462 /* UITableViewCell+ZRCategoryCell.m in Sources */,
+				8211743722F02566008D9174 /* UIButton+ZREnlargeEdge.m in Sources */,
 				82526A5B22C4C39D0060C462 /* ZRRemoteNotification.m in Sources */,
 				82526A2222C4C3570060C462 /* AppDelegate.m in Sources */,
 				82526A5922C4C39D0060C462 /* ZRColor.m in Sources */,
