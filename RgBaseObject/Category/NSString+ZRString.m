@@ -309,47 +309,25 @@
     return YES;
 }
 
-//// 获取可用的UrlSting
-//- (NSString *)availableUrlString {
-//    
-//    NSString *urlStr = [self stringByReplacingOccurrencesOfString:@" "
-//                                                       withString:@""];
-//    if ([urlStr containsString:@"CqlivingCloud.app"]) {
-//        
-//        return urlStr;
-//    }else {
-//        if (![urlStr hasPrefix:@"http"]) {
-//            urlStr = [NSString stringWithFormat:@"http://%@",urlStr];
-//        }
-//        if ([Utils isShowNoneImage]) {
-//            if ([urlStr containsString:@"?"]) {
-//                urlStr = [NSString stringWithFormat:@"%@&noimg=noimg",urlStr];
-//            }else {
-//                urlStr = [NSString stringWithFormat:@"%@?&noimg=noimg",urlStr];
-//            }
-//        }
-//        return urlStr;
-//    }
-//}
-
 #pragma mark - 计算字符串宽度、高度
 //计算文字占用宽度
 - (CGFloat)calculateWidthWithHeight:(CGFloat)height
                                font:(UIFont *)font {
-    
-    return [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
-                              options:NSStringDrawingUsesLineFragmentOrigin
-                           attributes:@{NSFontAttributeName: font}
-                              context:NULL].size.width;
+    CGFloat width = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
+                                       options:NSStringDrawingUsesLineFragmentOrigin
+                                    attributes:@{NSFontAttributeName: font}
+                                       context:NULL].size.width;
+    return ceil(width);
 }
 
 //计算文字占用高度
 - (CGFloat)calculateHeightWithWidth:(CGFloat)width
                                font:(UIFont *)font {
-    return [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
-                              options:NSStringDrawingUsesLineFragmentOrigin
-                           attributes:@{NSFontAttributeName: font}
-                              context:NULL].size.height;
+    CGFloat height = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
+                                        options:NSStringDrawingUsesLineFragmentOrigin
+                                     attributes:@{NSFontAttributeName: font}
+                                        context:NULL].size.height;
+    return ceil(height);
 }
 
 //计算文字占用高度（行间距）
@@ -372,7 +350,7 @@
     CGSize size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
                                      options:NSStringDrawingUsesLineFragmentOrigin
                                   attributes:dic context:nil].size;
-    return size.height;
+    return ceil(size.height);
 }
 
 //计算内容高度
@@ -383,21 +361,7 @@
     label.font = font;
     label.text = self;
     [label sizeToFit];
-    return CGRectGetHeight(label.frame);
-}
-
-//根据字符的长度计算label的宽度
-- (CGFloat)labelTextCountWidth {
-    
-    if (self.length == 1) {
-        return 18;
-    }else if (self.length == 2){
-        return 28;
-    }else if (self.length == 3){
-        return 36;
-    }else {
-        return 48;
-    }
+    return ceil(CGRectGetHeight(label.frame));
 }
 
 - (CGFloat)labelTextCountWidthWithFont:(UIFont *)font{
@@ -406,7 +370,7 @@
     label.font = font;
     label.text = self;
     [label sizeToFit];
-    return CGRectGetWidth(label.frame);
+    return ceil(CGRectGetWidth(label.frame));
 }
 
 -(NSString *)idCardString{

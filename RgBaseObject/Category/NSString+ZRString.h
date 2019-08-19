@@ -204,13 +204,6 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return label的宽度
  */
-- (CGFloat)labelTextCountWidth;
-
-/**
- *  根据字符的长度计算label的宽度
- *
- *  @return label的宽度
- */
 - (CGFloat)labelTextCountWidthWithFont:(UIFont *)font;
 
 /**
