@@ -20,6 +20,10 @@
         isEnble = false;
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         NSString *open = [userDefaults objectForKey:ZRRemoteNotification_Open_App];
+        if(ZR_StringIsEmpty(open)) {
+            // 第一次进入默认开启
+            open = @"1";
+        }
         if([open isEqualToString:@"1"]) {
             isEnble = true;
         }
