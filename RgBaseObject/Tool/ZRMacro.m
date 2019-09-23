@@ -21,23 +21,23 @@ BOOL ZRIPHONE_X_swift(void) {
     return isPhoneX;
 }
 
-float ZRSafeAreaTopHeight_swift(void) {
+CGFloat ZRSafeAreaTopHeight_swift(void) {
     return ZRIPHONE_X_swift() ? 88 : 64;
 }
 
-float ZRSafeAreaBottomHeight_swift(void) {
+CGFloat ZRSafeAreaBottomHeight_swift(void) {
     return ZRIPHONE_X_swift() ? (49 + 34) : 49;
 }
 
-float ZRSafeAreaNaviTopY_swift(void) {
+CGFloat ZRSafeAreaNaviTopY_swift(void) {
     return ZRIPHONE_X_swift() ? 44 : 20;
 }
 
-float ZRSafeAreaTabBottomY_swift(void) {
+CGFloat ZRSafeAreaTabBottomY_swift(void) {
     return ZRIPHONE_X_swift() ? 34 : 0;
 }
 
-float ZRSafeAreaBottomY_swift(void) {
+CGFloat ZRSafeAreaBottomY_swift(void) {
     return ZRIPHONE_X_swift() ? 17 : 0;
 }
 
@@ -45,11 +45,11 @@ CGRect ZR_ScreenBound_swift(void) {
     return [[UIScreen mainScreen] bounds];
 }
 
-float ZR_ScreenWidth_swift(void) {
+CGFloat ZR_ScreenWidth_swift(void) {
     return [[UIScreen mainScreen] bounds].size.width;
 }
 
-float ZR_ScreenHeight_swift(void) {
+CGFloat ZR_ScreenHeight_swift(void) {
     return [[UIScreen mainScreen] bounds].size.height;
 }
 
@@ -64,27 +64,27 @@ NSString *ZR_string_swift(NSString *str) {
     return value;
 }
 
-float ZR_matching_scale_swift(void) {
+CGFloat ZR_matching_scale_swift(void) {
     return ZR_ScreenWidth_swift() / 375.0;
 }
 
-float ZR_matching_width_swift(float width) {
+CGFloat ZR_matching_width_swift(CGFloat width) {
     return round((width) * ZR_matching_scale_swift());
 }
 
-UIFont *ZR_font_swift(float size) {
+UIFont *ZR_font_swift(CGFloat size) {
     return [UIFont systemFontOfSize:size];
 }
 
-UIFont *ZR_fontWeight_swift(float size, float weight) {
+UIFont *ZR_fontWeight_swift(CGFloat size, CGFloat weight) {
     return [UIFont systemFontOfSize:size weight:weight];
 }
 
-UIFont *ZR_match_font_swift(float size) {
+UIFont *ZR_match_font_swift(CGFloat size) {
     return [UIFont systemFontOfSize:ZR_matching_width_swift(size)];
 }
 
-UIFont *ZR_match_fontWeight_swift(float size, float weight) {
+UIFont *ZR_match_fontWeight_swift(CGFloat size, CGFloat weight) {
     return [UIFont systemFontOfSize:ZR_matching_width_swift(size) weight:ZR_matching_width_swift(weight)];
 }
 

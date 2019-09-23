@@ -17,25 +17,25 @@ float ZR_ios_system_swift(void);
 
 BOOL ZRIPHONE_X_swift(void);
 
-float ZRSafeAreaTopHeight_swift(void);
-float ZRSafeAreaBottomHeight_swift(void);
-float ZRSafeAreaNaviTopY_swift(void);
-float ZRSafeAreaTabBottomY_swift(void);
-float ZRSafeAreaBottomY_swift(void);
+CGFloat ZRSafeAreaTopHeight_swift(void);
+CGFloat ZRSafeAreaBottomHeight_swift(void);
+CGFloat ZRSafeAreaNaviTopY_swift(void);
+CGFloat ZRSafeAreaTabBottomY_swift(void);
+CGFloat ZRSafeAreaBottomY_swift(void);
 CGRect ZR_ScreenBound_swift(void);
-float ZR_ScreenWidth_swift(void);
-float ZR_ScreenHeight_swift(void);
+CGFloat ZR_ScreenWidth_swift(void);
+CGFloat ZR_ScreenHeight_swift(void);
 
 BOOL ZR_StringIsEmpty_swift(NSString *str);
 NSString *ZR_string_swift(NSString *str);
 
-float ZR_matching_scale_swift(void);
-float ZR_matching_width_swift(float width);
+CGFloat ZR_matching_scale_swift(void);
+CGFloat ZR_matching_width_swift(CGFloat width);
 
-UIFont *ZR_font_swift(float size);
-UIFont *ZR_fontWeight_swift(float size, float weight);
-UIFont *ZR_match_font_swift(float size);
-UIFont *ZR_match_fontWeight_swift(float size, float weight);
+UIFont *ZR_font_swift(CGFloat size);
+UIFont *ZR_fontWeight_swift(CGFloat size, CGFloat weight);
+UIFont *ZR_match_font_swift(CGFloat size);
+UIFont *ZR_match_fontWeight_swift(CGFloat size, CGFloat weight);
 
 NSString *ZR_imageFromBundle_swift(NSString *bundleName, NSString *imageName);
 
