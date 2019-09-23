@@ -11,6 +11,36 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma mark - 重写一套兼容Swift版本
+
+float ZR_ios_system_swift(void);
+
+BOOL ZRIPHONE_X_swift(void);
+
+float ZRSafeAreaTopHeight_swift(void);
+float ZRSafeAreaBottomHeight_swift(void);
+float ZRSafeAreaNaviTopY_swift(void);
+float ZRSafeAreaTabBottomY_swift(void);
+float ZRSafeAreaBottomY_swift(void);
+CGRect ZR_ScreenBound_swift(void);
+float ZR_ScreenWidth_swift(void);
+float ZR_ScreenHeight_swift(void);
+
+BOOL ZR_StringIsEmpty_swift(NSString *str);
+NSString *ZR_string_swift(NSString *str);
+
+float ZR_matching_scale_swift(void);
+float ZR_matching_width_swift(float width);
+
+UIFont *ZR_font_swift(float size);
+UIFont *ZR_fontWeight_swift(float size, float weight);
+UIFont *ZR_match_font_swift(float size);
+UIFont *ZR_match_fontWeight_swift(float size, float weight);
+
+NSString *ZR_imageFromBundle_swift(NSString *bundleName, NSString *imageName);
+
+#pragma mark - 以前老版本的宏定义，但是在swift版本中无法正常使用
+
 #define ZR_ios_system ([[[UIDevice currentDevice] systemVersion] floatValue])
 
 // iPhone X、XR、XS、XS Max 判断
