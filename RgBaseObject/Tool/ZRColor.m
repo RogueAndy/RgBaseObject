@@ -92,9 +92,9 @@ UIColor *colorWithHex(UInt32 hex) {
 }
 
 UIColor *colorWithRgbAlpha(float red, float green, float blue, float alpha) {
-    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:green / 255.0 alpha:alpha];
+    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:alpha];
 }
 
 UIColor *colorWithRgb(float red, float green, float blue) {
-    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:green / 255.0 alpha:1.0];
+    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:1.0];
 }
