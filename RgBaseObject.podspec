@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RgBaseObject"
-  s.version      = "0.0.15"
+  s.version      = "0.0.16"
   s.summary      = "基础组件"
   s.description  = <<-DESC
                     基础组件，初始化等等

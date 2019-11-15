@@ -15,7 +15,6 @@
 		82526A2D22C4C3580060C462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82526A2B22C4C3580060C462 /* LaunchScreen.storyboard */; };
 		82526A3022C4C3580060C462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A2F22C4C3580060C462 /* main.m */; };
 		82526A5222C4C39D0060C462 /* NSDictionary+ZRDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A3922C4C39D0060C462 /* NSDictionary+ZRDictionary.m */; };
-		82526A5322C4C39D0060C462 /* UITextView+ZRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A3A22C4C39D0060C462 /* UITextView+ZRCategory.m */; };
 		82526A5422C4C39D0060C462 /* UIView+ZRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4022C4C39D0060C462 /* UIView+ZRView.m */; };
 		82526A5522C4C39D0060C462 /* UIAlertController+ZRAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4122C4C39D0060C462 /* UIAlertController+ZRAlert.m */; };
 		82526A5622C4C39D0060C462 /* NSString+ZRString.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A4222C4C39D0060C462 /* NSString+ZRString.m */; };
@@ -45,11 +44,9 @@
 		82526A2F22C4C3580060C462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82526A3822C4C39D0060C462 /* UIView+ZRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZRView.h"; sourceTree = "<group>"; };
 		82526A3922C4C39D0060C462 /* NSDictionary+ZRDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZRDictionary.m"; sourceTree = "<group>"; };
-		82526A3A22C4C39D0060C462 /* UITextView+ZRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZRCategory.m"; sourceTree = "<group>"; };
 		82526A3B22C4C39D0060C462 /* UIAlertController+ZRAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+ZRAlert.h"; sourceTree = "<group>"; };
 		82526A3C22C4C39D0060C462 /* UITableViewCell+ZRCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ZRCategoryCell.h"; sourceTree = "<group>"; };
 		82526A3D22C4C39D0060C462 /* NSString+ZRString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZRString.h"; sourceTree = "<group>"; };
-		82526A3E22C4C39D0060C462 /* UITextView+ZRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZRCategory.h"; sourceTree = "<group>"; };
 		82526A3F22C4C39D0060C462 /* NSDictionary+ZRDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZRDictionary.h"; sourceTree = "<group>"; };
 		82526A4022C4C39D0060C462 /* UIView+ZRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZRView.m"; sourceTree = "<group>"; };
 		82526A4122C4C39D0060C462 /* UIAlertController+ZRAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+ZRAlert.m"; sourceTree = "<group>"; };
@@ -141,8 +138,6 @@
 				82526A4122C4C39D0060C462 /* UIAlertController+ZRAlert.m */,
 				82526A3C22C4C39D0060C462 /* UITableViewCell+ZRCategoryCell.h */,
 				82526A4322C4C39D0060C462 /* UITableViewCell+ZRCategoryCell.m */,
-				82526A3E22C4C39D0060C462 /* UITextView+ZRCategory.h */,
-				82526A3A22C4C39D0060C462 /* UITextView+ZRCategory.m */,
 				82526A3822C4C39D0060C462 /* UIView+ZRView.h */,
 				82526A4022C4C39D0060C462 /* UIView+ZRView.m */,
 				828AE6BA22CEE52900C0FE66 /* UIResponder+ZRResponder.h */,
@@ -245,7 +240,6 @@
 				82526A2522C4C3570060C462 /* ViewController.m in Sources */,
 				82526A3022C4C3580060C462 /* main.m in Sources */,
 				82526A5222C4C39D0060C462 /* NSDictionary+ZRDictionary.m in Sources */,
-				82526A5322C4C39D0060C462 /* UITextView+ZRCategory.m in Sources */,
 				82526A5622C4C39D0060C462 /* NSString+ZRString.m in Sources */,
 				82526A5822C4C39D0060C462 /* ZRTimer.m in Sources */,
 				82526A5D22C4C39D0060C462 /* ZRInitView.m in Sources */,

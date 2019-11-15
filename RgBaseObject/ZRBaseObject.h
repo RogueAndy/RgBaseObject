@@ -19,7 +19,6 @@
 #import "UIView+ZRView.h"
 #import "NSString+ZRString.h"
 #import "UIResponder+ZRResponder.h"
-#import "UITextView+ZRCategory.h"
 #import "UITableViewCell+ZRCategoryCell.h"
 #import "UIButton+ZREnlargeEdge.h"
 
