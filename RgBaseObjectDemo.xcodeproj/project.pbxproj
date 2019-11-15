@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8211743722F02566008D9174 /* UIButton+ZREnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8211743622F02566008D9174 /* UIButton+ZREnlargeEdge.m */; };
+		8245091D237E91FD00EA32F6 /* UITextView+ZRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245091C237E91FD00EA32F6 /* UITextView+ZRCategory.m */; };
 		82526A2222C4C3570060C462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A2122C4C3570060C462 /* AppDelegate.m */; };
 		82526A2522C4C3570060C462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82526A2422C4C3570060C462 /* ViewController.m */; };
 		82526A2822C4C3570060C462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82526A2622C4C3570060C462 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		8211743522F02566008D9174 /* UIButton+ZREnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZREnlargeEdge.h"; sourceTree = "<group>"; };
 		8211743622F02566008D9174 /* UIButton+ZREnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZREnlargeEdge.m"; sourceTree = "<group>"; };
+		8245091B237E91FD00EA32F6 /* UITextView+ZRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZRCategory.h"; sourceTree = "<group>"; };
+		8245091C237E91FD00EA32F6 /* UITextView+ZRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZRCategory.m"; sourceTree = "<group>"; };
 		82526A1D22C4C3570060C462 /* RgBaseObjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RgBaseObjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82526A2022C4C3570060C462 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82526A2122C4C3570060C462 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		82526A3722C4C39D0060C462 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8245091B237E91FD00EA32F6 /* UITextView+ZRCategory.h */,
+				8245091C237E91FD00EA32F6 /* UITextView+ZRCategory.m */,
 				8211743522F02566008D9174 /* UIButton+ZREnlargeEdge.h */,
 				8211743622F02566008D9174 /* UIButton+ZREnlargeEdge.m */,
 				82526A3F22C4C39D0060C462 /* NSDictionary+ZRDictionary.h */,
@@ -252,6 +257,7 @@
 				82526A2222C4C3570060C462 /* AppDelegate.m in Sources */,
 				82526A5922C4C39D0060C462 /* ZRColor.m in Sources */,
 				828AE6BC22CEE52900C0FE66 /* UIResponder+ZRResponder.m in Sources */,
+				8245091D237E91FD00EA32F6 /* UITextView+ZRCategory.m in Sources */,
 				82526A5522C4C39D0060C462 /* UIAlertController+ZRAlert.m in Sources */,
 				82526A5422C4C39D0060C462 /* UIView+ZRView.m in Sources */,
 			);
