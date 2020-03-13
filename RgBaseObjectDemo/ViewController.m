@@ -31,8 +31,4 @@
     [self.view addSubview:btn];
 }
 
-- (void)test {
-    NSLog(@"dddddd");
-}
-
 @end

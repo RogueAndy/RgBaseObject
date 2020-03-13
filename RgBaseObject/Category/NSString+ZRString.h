@@ -12,21 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (ZRString)
 
-#pragma mark - 加密
-/**
- *  md5加密
- *
- *  @return 加密后的string
- */
-- (NSString *)md5;
-
-/**
- *  sha1加密
- *
- *  @return 加密后的string
- */
-- (NSString *)sha1;
-
 #pragma mark - 编码
 /**
  *  将文本转换为base64编码
