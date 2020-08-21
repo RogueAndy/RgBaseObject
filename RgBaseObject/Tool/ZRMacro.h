@@ -66,7 +66,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #define ZR_StringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 || [[str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] < 1 ? YES : NO )
 // 防止String返回值为空为导致Crash
 #define ZR_string(str) ({NSString *value = @"";\
-value = str ? str : @"";\
+value = (str && ![str isKindOfClass:[NSNull class]]) ? str : @"";\
 (value);})
 
 #define ZR_ScreenBound [[UIScreen mainScreen] bounds]

@@ -60,7 +60,7 @@ BOOL ZR_StringIsEmpty_swift(NSString *str) {
 
 NSString *ZR_string_swift(NSString *str) {
     NSString *value = @"";
-    value = str ? str : @"";
+    value = (str && ![str isKindOfClass:[NSNull class]]) ? str : @"";
     return value;
 }
 
